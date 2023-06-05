@@ -1,0 +1,298 @@
+/*Prima soluzione*/
+.ex-1-square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    transition: background-color 1s;
+}
+.ex-1-square:hover{
+    background-color: red;
+}
+
+/*Seconda soluzione*/
+.ex-2-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 1s;
+}
+.ex-2-square:active{
+    width: 100%;
+}
+
+/*Terza soluzione*/
+.ex-3-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: border-radius 1s;
+}
+.ex-3-square:hover{
+    border-radius: 50%;
+}
+
+/*Quarta soluzione*/ 
+.ex-4-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: background 1s;
+}
+.ex-4-square:hover{
+    background: none;
+}
+
+/*quinta soluzione*/
+.ex-5-square {
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+    background: red;
+    transition: width 1s, height 1s;
+}
+.ex-5-square:hover{
+    width: 100px;
+    height: 100px;
+}
+.ex-5-square:active{
+    width: 30px;
+    height: 30px;
+}
+
+/*Sesta soluzione*/
+.ex-6-img, .ex-7-img, .ex-8-img {
+    width: 500px;
+}
+.ex-6-img:hover{
+    filter: grayscale(100%) ;
+}
+/*Settima soluzione*/
+.ex-7-img{
+    transition: filter 1s;
+}
+.ex-7-img:hover{
+    filter: blur(3px) grayscale(10%)
+}
+/*Ottava soluzione*/
+.ex-8-img{
+    transition: all 1s;
+}
+.ex-8-img:hover{
+    border-radius: 20px;
+    filter: contrast(70%) brightness(50%);
+}
+/*Nona soluzione*/
+.ex-9-img {
+    margin: 50px 100px;
+    width: 400px;
+    transition: all 1s;
+}
+.ex-9-img:hover{
+    width: 600px;
+    border-radius: 20px;
+    filter: sepia(80%) opacity(40%);
+}
+
+/*Decima soluzione*/
+.ex-10-icon {
+    font-size: 60px;
+    animation-name: icon10-movement;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes icon10-movement{
+    0%{
+        rotate: 0deg;
+    }
+
+    100%{
+        rotate:360deg;
+    }
+}
+/*Undicesima soluzione*/ 
+.ex-11-icon {
+    font-size: 60px;
+}
+.ex-11-icon:hover{
+    animation-name: icon11-movement;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes icon11-movement{
+    0%{
+        rotate:0deg;
+    }
+    80%{
+        rotate: 270deg;
+    }
+}
+
+.ex-12-button, .ex-13-button {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 70px;
+    text-transform: uppercase;
+    border: 3px solid #1b3c59;
+    color: #1b3c59;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+}
+.ex-12-top-white, .ex-13-top-white {
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+
+.ex-12-bottom-white, .ex-13-bottom-white {
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+
+/*Dodicesima soluzione*/
+.ex-12-button:hover .ex-12-top-white {
+    animation-name: bar-top12;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes bar-top12{
+    0%{
+        top: -10px;
+        left: 10%;
+    }
+    50%{
+        top: -10px;
+        left: 60%;
+    }
+    100%{
+        top: -10px;
+        left: 10%;
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: bar-bottom12;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes bar-bottom12{
+    0%{
+        bottom: -10px;
+        right: 10%;
+    }
+    50%{
+        bottom: -10px;
+        right: 60%;
+    }
+    100%{
+        bottom: -10px;
+        right: 10%;
+    }
+}
+
+/*.ex-12-button, .ex-13-button {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 70px;
+    text-transform: uppercase;
+    border: 3px solid #1b3c59;
+    color: #1b3c59;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+}
+.ex-12-top-white, .ex-13-top-white {
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+
+.ex-12-bottom-white, .ex-13-bottom-white {
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}*/
+
+/*Tredicesima soluzione*/
+.ex-13-button:hover .ex-13-top-white {
+    animation-name: bar-top13;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+
+@keyframes bar-top13{
+    0%{
+        width: 60px;
+        height: 20px;
+        top: -10px;
+        left: 10%;
+    }
+
+    50%{
+        width: 60px;
+        height: 20px;
+        top: -10px;
+        left: 80%;
+    }
+
+    100%{
+        width: 20px;
+        height: 80px;
+        top: -10;
+        left: 100%;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation-name: bar-bottom13;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+@keyframes bar-bottom13{
+    0%{
+        width: 60px;
+        height: 20px;
+        bottom: -10px;
+        right: 10%;
+    }
+
+    50%{
+        width: 60px;
+        height: 20px;
+        bottom: -10px;
+        right: 80% ;
+    }
+
+    100%{
+        width: 20px;
+        height: 80px;
+        bottom: -10px;
+        right: 100%;
+    }
+}
+
